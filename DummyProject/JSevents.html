@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn{
+            border: none;
+            padding: 10px 14px;
+            background-color: aqua;
+            color: blue;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .button{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p class="para" id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsum illum ea, laudantium laborum odio nobis quam a sed veritatis, vitae harum aut provident nesciunt porro molestias tempora! Iste nemo eius explicabo sequi minus distinctio, voluptates maxime quam rem quo. Commodi quisquam sit quos vero dolorem provident officiis repellat, labore nisi in exercitationem omnis deleniti culpa odit saepe natus unde repellendus nobis mollitia. Corporis deserunt dignissimos veniam reiciendis molestiae dolore id recusandae optio, laborum explicabo aperiam nostrum tempore harum, delectus quasi soluta numquam itaque laboriosam. At alias id quo incidunt et aut dicta! Similique dolores vitae, nisi praesentium consequuntur in!</p>
+    </div>
+    <div class="button">
+    <button id="btn" onclick="Togglehide()">Show/hide</button></div>
+    <script>
+        function Togglehide(){
+           let btn = document.getElementById('btn');
+           let para = document.getElementById('para');
+        //    if (para.style.display!='none' ) {
+        //     para.style.display='none';
+        //    } else {
+        //     para.style.display='block'; 
+        //    }
+        if (para.style.color!='red' ) {
+            para.style.color='red';
+           } else {
+            para.style.color='black'; 
+           }
+        
+        }
+    </script>
+</body>
+</html>
